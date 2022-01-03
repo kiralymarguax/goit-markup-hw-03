@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,271 +8,204 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header-navigation">
-            <a class="logo link" href="./index.html" lang="en">Web<span class="logo-in-header">Studio</span></a>
-            <ul class="list">
-                <li>
+    <header>
+        <div class="container header">
+            <nav class="site-nav">
+                <a class="logo link" href="./index.html" lang="en"
+                >Web<span class="logo-in-header">Studio</span></a
+                >
+                <ul class="list nav-list">
+                    <li class="item">
                     <a class="navigation-link link" href="./index.html">Студия</a>
                 </li>
-                <li>
+                <li class="item">
                     <a class="navigation-link link current" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li>
-                    <a class="navigation-link link" href="...">Контакты</a>
+                <li class="item">
+                    <a class="navigation-link link" href=".....">Контакты</a>
                 </li>
             </ul>
         </nav>
-        <ul class="list">
-            <li>
+        <ul class="list top-contacts-list">
+            <li class="top-contacts-item">
                 <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="header-contacts link" href="+380961111111">+380961111111</a>
+            <li class="top-contacts-item">
+                <a class="header-contacts link" href="+380961111111"
+                >+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </header>
     <main>
-        <section class="filter-section">
+        <section class="container portfolio">
             <h1 hidden>Наши работы</h1>
             <!--Filter-->
-            <ul class="list">
-                <button class="button" type="button">все</button>
-                <li><button class="filter-button" type="button">веб-сайты</button></li>
-                <li><button class="filter-button" type="button">приложения</button></li>
-                <li><button class="filter-button" type="button">дизайн</button></li>
-                <li><button class="filter-button" type="button">Маркетинг</button></li>
+            <ul class="list filter-butn-list">
+                <li class="filter-item"><button class="filter-button" type="button">все</button></li>
+                <li class="filter-item"><button class="filter-button" type="button">веб-сайты</button></li>
+                <li class="filter-item"><button class="filter-button" type="button">приложения</button></li>
+                <li class="filter-item"><button class="filter-button" type="button">дизайн</button></li>
+                <li class="filter-item"><button class="filter-button" type="button">Маркетинг</button></li>
             </ul>
-        </section>
         <!--Work list-->
-        <section class="work-section">
-            <ul class="list">
-                <li class="list list">
-
-                    <a class="link" href=""><img src="./images/portfolio/persons.jpg" alt="persons" width="370"
-                            height="294" />
-
+            <ul class="list work-list">
+                <li class="work-list-item">
+                    <a class="link" href=""
+                    ><img 
+                    src="./images/portfolio/persons.jpg" 
+                    alt="persons" 
+                    width="370" 
+                    height="294" 
+                    />
+                    <div class="work-description">
                         <h2 class="project-name">Технокряк</h2>
-
                         <p class="project-type">Веб-сайт</p>
-
-                        <!--<p class="project-description">
-            
-                            техническое описание - это документ, созданный для того,<br/>
-            
-                                чтобы конечный пользователь понял, как работает продукт,
-            
-                                 процесс или концепция.
-            
-                            </p>-->
-
-                    </a>
-
-                </li>
-
-                <li class="list list">
-
-                    <img src="./images/portfolio/basketball.jpg" alt="basketballers" width="370" height="294">
-
-                    <h2 class="project-name">Постер <span lang="en">New Orleans vs Golden Star</span></h2>
-
-                    <p class="project-type">Дизайн</p>
-
+                    </div>
                     <!--<p class="project-description">
-            
-                        техническое описание - это документ, созданный для того,<br/>
-            
-                                                   чтобы конечный пользователь понял, как работает продукт,
-            
-                                                    процесс или концепция.
-            
-                                                </p>-->
-
-                    </a>
-
+                    техническое описание - это документ, созданный для того,
+                    чтобы конечный пользователь понял, как работает продукт,
+                    процесс или концепция.
+                </p>-->
+            </a>
+        </li>
+        <li class="work-list-item">
+            <a class="link" href=""
+            ><img 
+            src="./images/portfolio/basketball.jpg" 
+            alt="basketballers" 
+            width="370" 
+            height="294" 
+            />
+            <div class="work-description">
+                <h2 class="project-name">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+            </h2>
+            <p class="project-type">Дизайн</p>
+            </div>
+                            <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                    </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/seafood.jpg" alt="restaurant" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name">Ресторант <span lang="en">Seafood</span></h2>
+                                    <p class="project-type">Приложение</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/headset.jpg" alt="headset" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name">Проект <span lang="en">Prime</span></h2>
+                                    <p class="project-type">Маркетинг</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/boxes.jpg" alt="boxes" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name">Проект <span lang="en">Boxes</span></h2>
+                                    <p class="project-type">Приложение</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/pc.jpg" alt="pc" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name"> <span lang="en">Inspiration has no Borders</span></h2>
+                                    <p class="project-type">Веб-сайт</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/pages.jpg" alt="pages" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name">Издание <span lang="en">Limited Edition</span></h2>
+                                    <p class="project-type">Дизайн</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
+                        <li class="work-list-item">
+                            <a class="link" href=""><img src="./images/portfolio/tags.jpg" alt="tags" width="370" height="294" />
+                                <div class="work-description">
+                                    <h2 class="project-name">Проект <span lang="en">LAB</span></h2>
+                                    <p class="project-type">Маркетинг</p>
+                                </div>
+                                <!--<p class="project-description">
+                                    техническое описание - это документ, созданный для того,<br/>
+                                    чтобы конечный пользователь понял, как работает продукт,
+                                    процесс или концепция.
+                                </p>-->
+                            </a>
+                        </li>
                 </li>
-
-                <li class="list list">
-
-
-
-                    <img src="./images/portfolio/seafood.jpg" alt="seafood" width="370" height="294">
-
-                    <h2 class="project-name">Ресторант <span lang="en">Seafood</span></h2>
-
-                    <p class="project-type">Приложение</p>
-
-                    <!--<p class="project-description">
-            
-                        техническое описание - это документ, созданный для того,<br/>
-            
-                                                   чтобы конечный пользователь понял, как работает продукт,
-            
-                                                    процесс или концепция.
-            
-                                                </p>-->
-
-
-
-                </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/headset.jpg" alt="headset" width="370" height="294">
-
-                        <h2 class="project-name">Проект <span lang="en">Prime</span></h2>
-
-                        <p class="project-type">Маркетинг</p>
-
+                <li class="work-list-item">
+                    <a class="link" href=""><img src="./images/portfolio/screen.jpg" alt="screen" width="370" height="294" />
+                        <div class="work-description">
+                            <h2 class="project-name"> <span lang="en">Growing Business</span></h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
                         <!--<p class="project-description">
-            
                             техническое описание - это документ, созданный для того,<br/>
-            
-                                                  чтобы конечный пользователь понял, как работает продукт,
-            
-                                                   процесс или концепция.
-            
-                                                </p>-->
-
+                            чтобы конечный пользователь понял, как работает продукт,
+                            процесс или концепция.
+                        </p>-->
                     </a>
-
                 </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/boxes.jpg" alt="boxes" width="370" height="294">
-
-                        <h2 class="project-name">Проект <span lang="en">Boxes</span></h2>
-
-                        <p class="project-type">Приложение</p>
-
-                    </a>
-
                 </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/pc.jpg" alt="boxes" width="370" height="294">
-
-                        <h2 class="project-name"> <span lang="en">Inspiration has no Borders</span></h2>
-
-                        <p class="project-type">Веб-сайт</p>
-
-                        <!--<p class="project-description">
-            
-                            техническое описание - это документ, созданный для того,<br/>
-            
-                                                    чтобы конечный пользователь понял, как работает продукт,
-            
-                                                     процесс или концепция.
-            
-                                                </p>-->
-
-                    </a>
-
-                </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/pages.jpg" alt="pages" width="370" height="294">
-
-                        <h2 class="project-name">Издание <span lang="en">Limited Edition</span></h2>
-
-                        <p class="project-type">Дизайн</p>
-
-                        <!--<p class="project-description">
-            
-                            техническое описание - это документ, созданный для того,<br/>
-            
-                                                  чтобы конечный пользователь понял, как работает продукт,
-            
-                                                   процесс или концепция.
-            
-                                                </p>-->
-
-                    </a>
-
-                </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/tags.jpg" alt="tag" width="370" height="294">
-
-                        <h2 class="project-name">Проект <span lang="en">LAB</span></h2>
-
-                        <p class="project-type">Маркетинг</p>
-
-                        <!--<p class="project-description">
-            
-                            техническое описание - это документ, созданный для того,<br/>
-            
-                                                  чтобы конечный пользователь понял, как работает продукт,
-            
-                                                   процесс или концепция.
-            
-                                                </p>-->
-
-                    </a>
-
-                </li>
-
-                <li class="list list">
-
-                    <a>
-
-                        <img src="./images/portfolio/screen.jpg" alt="screen" width="370" height="294">
-
-                        <h2 class="project-name"> <span lang="en">Growing Business</span></h2>
-
-                        <p class="project-type">Приложение</p>
-
-                        <!--<p class="project-description">
-            
-                            техническое описание - это документ, созданный для того,<br/>
-            
-                                                   чтобы конечный пользователь понял, как работает продукт,
-            
-                                                    процесс или концепция.
-            
-                                                </p>-->
-
-                    </a>
-
-                </li>
-
-                </li>
-
             </ul>
         </section>
     </main>
-
     <footer class="footer">
-        <address class="adress">
-            <a class="logo link" href="./index.html" lang="en">Web<span class="logo-in-footer">Studio</span></a>
-
+        <div class="container">
+            <a class="logo link" href="./index.html" lang="en"
+            >Web<span class="logo-in-footer">Studio</span></a
+            >
+            <address class="address">
             <p class="company-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-list list">
-                <li class="footer-item">
-                    <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="contacts-item">
-                    <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-                </li>
-            </ul>
+            <a class="footer-contacts link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+            >
+            <a class="footer-contacts link" href="tel:+380441111111"
+            >+38 044 111 11 11</a>
         </address>
+        </div>
     </footer>
 </body>
 
