@@ -35,6 +35,7 @@ h6 {
 }
 
 ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -47,6 +48,19 @@ body {
 
 img {
     display: block;   
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  clip-path: inset (50%);
+  margin: -1px;
 }
 
 /*Components*/
@@ -78,10 +92,10 @@ img {
 
 /* ==Header==*/
 header {
-    border: 1px solid #ececec;  
+    border-bottom: 1px solid #ececec;  
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
 }
@@ -211,7 +225,7 @@ header {
 }
 
 /*List of benefits*/
-.benefits-section {
+.section {
     padding: 94px 0px;
 }
 .benefits-list {
@@ -243,7 +257,7 @@ header {
 }
 /* Services */
 .services-section {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .services-list {
@@ -268,13 +282,11 @@ header {
 /* Our team */
 .team-section {
     background: var(--filt-btn-team-bg);
-    padding: 94px 0px;
 }
 
 .team-list {
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
 }
 
 .team-title {
@@ -318,8 +330,6 @@ header {
 .team-description {
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 /*====Portfolio====*/
@@ -332,7 +342,6 @@ header {
 .filter-butn-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
 }
 
 .filter-item:not(:last-child) {
@@ -361,10 +370,9 @@ header {
 
 /* Work list*/
 .work-list {
-    margin-top: 34px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .project-name {
